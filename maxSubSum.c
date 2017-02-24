@@ -1,33 +1,13 @@
-#include <stdio.h>
-#include <stdlib.h>
+ def maxSubSum1(myvector):
+maxSum=0
+for i in range((len(myvector))):
 
-int main(int argc, char *argv[])
-{
-  system("PAUSE");	
-  return 0;
-}
-int FindMaxSubSum3(int x[], int n)
-{
-    int sum = 0;
-    for (int i = 0; i < n; i++)
-    {
-        sum += x[i];
-        x[i] = sum;//sum of x[0...i] is stored to x[i]
-    }
-
-    int maxSubSum = 0x80000000;
-    sum = 0;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = i; j< n; j++)
-        {
-            sum = x[j] - x[i];
-            if (sum > maxSubSum)
-            {
-                maxSubSum = sum;
-            }
-        }
-    }
-    return maxSubSum;
-}
-
+for j in range(i,len(myvector)):
+thisSum=0
+for k in range (i,j):
+thisSum=thisSum+myarray[k]
+if (thisSum>maxSum):
+maxSum=thisSum
+return maxSum
+myarray=[4, -3, 5, -2, -1, 2, 6,-2]
+print(maxSubSum1(myarray))
