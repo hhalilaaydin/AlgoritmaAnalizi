@@ -14,15 +14,15 @@ int main(int argc, char *argv[])
   return 0;
 }
 int power(int a,int b){
-    int sonuc=1;
-    if(b==0){
+    int sonuc=1;        //1
+    if(b==0){           //1
     sonuc=1;
             }
     else {
-    int i;
-    for(i=1;i<=b;i++){
-    sonuc=sonuc*a;
-    }
+    int i;              //1
+    for(i=1;i<=b;i++){  //N-1
+    sonuc=sonuc*a;      //N-1
+    }                      //2N+1=O(N) 
     }
     return sonuc; 
     }
