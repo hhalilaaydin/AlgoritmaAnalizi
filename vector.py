@@ -1,5 +1,5 @@
 class Vec:
-	def __init__(self,labels,function);
+	def __init__(self,labels,function):
 		self.D=labels
 		self.f=function
 
@@ -15,7 +15,7 @@ def setitem(v,d,val):
 def scaler_mul(v,alpha):
 	return Vec(v.D,(d:alpha*getitem(v,d) for d in v.D))
 
-def add(u,v)
+def add(u,v):
 	return Vec(u.D,(getitem(u,d)*getitem(v,d) for d in u.D))
 
 def neg(v):
