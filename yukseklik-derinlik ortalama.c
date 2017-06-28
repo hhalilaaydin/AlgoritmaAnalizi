@@ -112,7 +112,7 @@ ekle(agac,rand()%50);
 preorder(agac);
 }
 toplamEleman=randomSayi4;
-printf(Derinlik Ortalamasý=%f,derinlikToplamtoplamEleman);
+printf(Derinlik OrtalamasÃ½=%f,derinlikToplamtoplamEleman);
 ekle(agac,20);
 ekle(agac,35);
 ekle(agac,98);
